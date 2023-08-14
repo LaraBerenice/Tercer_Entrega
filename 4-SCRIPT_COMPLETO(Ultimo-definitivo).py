@@ -140,6 +140,6 @@ def cargar_tabla_staging(consulta2, tabla_name2, data):
 cargar_tabla_staging(CONSULTA2, nombre_tabla2, data)
 
 
-print("todo el codigo ah corrido exitosamente ")
+print("Todo el código ha corrido exitosamente.")
 
 

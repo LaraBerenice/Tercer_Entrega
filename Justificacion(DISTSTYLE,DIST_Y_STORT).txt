@@ -1,0 +1,5 @@
+
+"Elegí la columna (fecha), como stork key(clave de almacenamiento o ordenamiento), 
+porque no encontre otros datos que me sean de interes para organizar las consultas creo
+que es la columna mas importante, el estilo de distribuccion que puse es all ya que considero que todos los datos
+podrian ser importante a la hora de realizar consultas en la tabla y es una tabla pequeña."

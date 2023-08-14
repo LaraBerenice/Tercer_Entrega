@@ -1,8 +1,6 @@
 #------------------------------------------------------------------------------
 
-# Clima 	Clima actual y pronóstico de 3hs a 5 dias. 	Plan gratuito,
-
-#  60 Llamadas por minuto o 1.000.000 al mes.
+# Clima Clima actual. Plan gratuito, 60 Llamadas por minuto o 1.000.000 al mes.
 
 #-------------------------------------------------------------------------------
 	

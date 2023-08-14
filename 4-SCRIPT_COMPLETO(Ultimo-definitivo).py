@@ -1,6 +1,6 @@
 
-#TUVE QUE CAMBIAR LA API PORQUE VENCIO MI API KEY Y ME PEDIAN PAGAR PARA RENOVAR MI SUSCRIPCCION,
-# ENTONCES TUVE QUE CAMBIAR EL PROYECTO POR AHORA ESTOY CON ESTA API2
+#Tuve que cambiar la API porque venció mi clave de API y me pedían pagar para renovar mi suscripción.
+#Entonces, tuve que cambiar el proyecto; por ahora, estoy utilizando esta API2.
 
 import psycopg2
 import pandas as pd

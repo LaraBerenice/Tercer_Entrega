@@ -1,3 +1,4 @@
+#----------------------------------------------------------------------------------
 
 import psycopg2
 import pandas as pd
@@ -7,6 +8,8 @@ import configparser
 import sqlalchemy as sa
 import requests
 from sqlalchemy import create_engine
+
+#-----------------------------------------------------------------------------
 
 ruta_Archivo = "parametros_API2.json"
 
@@ -139,11 +142,3 @@ cargar_tabla_staging(CONSULTA2, nombre_tabla2, data)
 
 
 print("Todo el código ha corrido exitosamente.")
-
-
-
-
-
-
-
-

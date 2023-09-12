@@ -1,26 +1,26 @@
-# Utiliza la imagen base de Python
-FROM python
+# Utiliza una imagen oficial de Apache Airflow como base
+FROM apache/airflow:2.1.2
 
-# Establece el directorio de trabajo en el contenedor
-WORKDIR /app/
+# Configura la variable de entorno AIRFLOW_HOME
+ENV AIRFLOW_HOME=/opt/airflow
 
-# Copia todos los archivos y carpetas desde la carpeta actual (que contiene Dockerfile) en tu sistema local al contenedor
-COPY . /app/
+# Crea el directorio "dags" dentro del directorio de trabajo de Airflow
+RUN mkdir -p $AIRFLOW_HOME/dags
 
-# Instala las dependencias desde el archivo "requirements.txt"
-RUN pip install -r /app/librerias.txt
+# Copia el archivo DAG del directorio actual al directorio "dags" del contenedor
+COPY my_dag1_docker_operador.py $AIRFLOW_HOME/dags/
 
-EXPOSE 5439
+# Copia el archivo de configuración personalizado
+COPY airflow.cfg $AIRFLOW_HOME/airflow.cfg
 
-# Cambia los permisos del script para que sea ejecutable (si es necesario)
-RUN chmod +x /app/script_completo_ultimo_definitivo.py
+# Expone el puerto 8080 para el servidor web de Airflow
+EXPOSE 8080
 
-# Ejecuta el script de Python al iniciar el contenedor
-CMD ["python", "/app/script_completo_ultimo_definitivo.py"]
+# Inicia el servidor web de Airflow al iniciar el contenedor
+# Resto del Dockerfile...
 
-
-
-
+# Inicia el servidor web de Airflow al iniciar el contenedor
+CMD ["airflow", "webserver", "-D"]
 
 
 
